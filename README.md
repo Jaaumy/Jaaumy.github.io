@@ -45,15 +45,9 @@ Este repositório contém o código-fonte de um site fictício chamado **Superme
 
 ---
 
-## 🌐 Demonstração
-
-Você pode acessar o site do projeto clicando [aqui](www.supramercado.me).
-
----
-
 ## 🤝 Contribuições
 
-Contribuições são bem-vindas! Se você deseja contribuir, siga as etapas abaixo:
+Se você deseja contribuir, siga as etapas abaixo:
 
 1. Faça um fork do repositório.
 2. Crie uma branch para sua funcionalidade: `git checkout -b minha-funcionalidade`.
