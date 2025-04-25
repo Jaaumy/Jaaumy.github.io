@@ -41,7 +41,7 @@ Aqui você encontrará categorias organizadas, um controle de estoque, e ainda u
 
 1. Clone este repositório:
    ```bash
-   [git clone https://github.com/Jaaumy/Supramercado.git
+   git clone https://github.com/Jaaumy/Supramercado.git
    ```
 2. Abra o arquivo `index.html` em um navegador para visualizar o site.
 
