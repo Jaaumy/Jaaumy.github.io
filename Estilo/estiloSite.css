@@ -1,0 +1,364 @@
+    .imagem-promocao{
+        height: 200px;
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+        position: relative;
+    }
+    .logo-container {
+        margin-right: 30px;
+    }
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .logo-container {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        .nav-links {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+    }
+    /* Estilos CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    :root {
+        --verde: #2ecc71;
+        --branco: #ffffff;
+        --cinza-escuro: #2c3e50;
+    }
+    /* Barra de navegação */
+    .navbar {
+        background-color: var(--cinza-escuro);
+        padding: 1rem 2rem;
+        position: static;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+
+    .nav-links a {
+        color: var(--branco);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: var(--verde);
+    }
+
+    /* Carrossel */
+    .carousel {
+        margin-top: 70px;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel-slide {
+        display: none;
+        width: 100%;
+        height: 100%;
+        animation: fade 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: 0.4}
+        to {opacity: 1}
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Seções de ofertas */
+    .ofertas-section {
+        padding: 2rem;
+        background-size: 10px;
+        text-align: center;
+        background-color: #f8f9fa;
+    }
+
+    .categoria-titulo {
+        color: var(--cinza-escuro);
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid var(--verde);
+    }
+
+    .produto-card {
+        align-items: center;
+        background: #2f5453;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+
+    .produto-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .produto-preco {
+        color: var(--verde);
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+
+    .botao-comprar {
+        background-color: var(--verde);
+        color: var(--branco);
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .botao-comprar:hover {
+        background-color: #27ae60;
+    }
+
+    /* Footer */
+    footer {
+        background-color: var(--cinza-escuro);
+        color: var(--branco);
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    .produtos-grid {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding: 15px 0;
+        scrollbar-width: thin;
+    }
+
+    .produto-card {
+        min-width: 250px;
+        flex-shrink: 0;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .imagem-promocao img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .botao-comprar {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .botao-comprar:hover {
+        background-color: #45a049;
+    }
+    /* Estilos para a seção de padaria */
+    .subcategorias {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    .subtab-btn {
+        padding: 8px 16px;
+        background-color: #f0f0f0;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .subtab-btn:hover {
+        background-color: #ddd;
+    }
+
+    .subtab-btn.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .subcategoria-conteudo {
+        display: none;
+    }
+
+    .subcategoria-conteudo.active {
+        display: block;
+    }
+
+    .quantidade-controle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .btn-quantidade {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #ddd;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .quantidade {
+        margin: 0 10px;
+        min-width: 20px;
+        text-align: center;
+    }
+    /* Estilos das Abas */
+    .categorias-container {
+        padding: 20px;
+        background: #f8f9fa;
+        margin-bottom: 30px;
+    }
+
+    .categoria-tabs {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .tab-btn {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 25px;
+        background: #e9ecef;
+        color: #333;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-weight: 500;
+    }
+
+    .tab-btn:hover {
+        background: #dee2e6;
+    }
+
+    .tab-btn.active {
+        background: #4CAF50;
+        color: white;
+    }
+
+    /* Esconder seções não ativas */
+    .ofertas-section:not(.active) {
+        display: none;
+    }
+
+    /* Estilos para a seção "Sobre Nós" */
+    #sobre {
+        background-color: #f8f9fa; /* Cor de fundo suave */
+        padding: 30px; /* Espaçamento interno */
+        margin: 20px auto; /* Espaçamento externo e centralização */
+        border-radius: 10px; /* Bordas arredondadas */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+        max-width: 800px; /* Largura máxima */
+        text-align: left; /* Alinhamento do texto */
+    }
+
+    /* Título da seção */
+    #sobre .categoria-titulo {
+        color: var(--cinza-escuro); /* Cor do título */
+        font-size: 2rem; /* Tamanho da fonte */
+        margin-bottom: 1rem; /* Espaçamento abaixo do título */
+        text-align: center; /* Centralizar o título */
+    }
+
+    /* Parágrafos de descrição */
+    #sobre .descricao {
+        color: #555; /* Cor do texto */
+        font-size: 1.1rem; /* Tamanho da fonte */
+        line-height: 1.6; /* Altura das linhas */
+        margin-bottom: 1rem; /* Espaçamento entre os parágrafos */
+    }
+
+    /* Lista de benefícios */
+    #sobre ul {
+        padding-left: 20px; /* Espaçamento esquerdo */
+        color: #333; /* Cor do texto */
+        margin-top: 1rem; /* Espaçamento acima */
+        margin-bottom: 1rem; /* Espaçamento abaixo */
+    }
+
+    #sobre ul li {
+        margin-bottom: 0.5rem; /* Espaçamento entre os itens */
+        list-style-type: disc; /* Marcador de lista */
+    }
+
+    /* Destaque em palavras importantes */
+    #sobre strong {
+        color: var(--verde); /* Cor de destaque */
+        font-weight: bold; /* Negrito */
+    }
+    /* Estilos para a seção SAC */
+    #sac {
+        background-color: #f7f7f7; /* Cor de fundo suave */
+        padding: 30px; /* Espaçamento interno */
+        margin: 20px auto; /* Espaçamento externo */
+        border-radius: 10px; /* Bordas arredondadas */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+        max-width: 800px; /* Largura máxima */
+        text-align: left; /* Alinhamento do texto */
+    }
+
+    /* Título da seção SAC */
+    #sac .categoria-titulo {
+        color: var(--cinza-escuro); /* Cor do título */
+        font-size: 2rem; /* Tamanho da fonte */
+        margin-bottom: 1.5rem; /* Espaçamento abaixo do título */
+        text-align: center; /* Centralizar o título */
+    }
+
+    /* Perguntas e Respostas */
+    .faq-item {
+        margin-bottom: 20px; /* Espaçamento entre as perguntas */
+    }
+
+    .pergunta {
+        font-size: 1.2rem; /* Tamanho da fonte da pergunta */
+        font-weight: bold; /* Negrito para a pergunta */
+        color: var(--verde); /* Cor da pergunta */
+        margin-bottom: 5px; /* Espaçamento abaixo da pergunta */
+    }
+
+    .resposta {
+        font-size: 1rem; /* Tamanho da fonte da resposta */
+        color: #555; /* Cor do texto da resposta */
+        line-height: 1.6; /* Altura das linhas da resposta */
+        margin-bottom: 10px; /* Espaçamento abaixo da resposta */
+    }

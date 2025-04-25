@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo/estiloSite.css">
+    <script src="Script/scriptmain.js"></script>
+    <title>Supermercado Supra</title>
+</head>
+<body class="body">
+<!-- Barra de navegação -->
+<nav class="navbar">
+    <div class="imagem-promocao">
+        <img src="Imagem/iconSupra.png" alt="Supermercado Supra">
+    </div>
+    <div class="nav-links">
+        <a href="#login">Login/Cadastro</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#carrinho">Carrinho</a>
+        <a href="#sac">SAC</a>
+        <a href="estoque.html">Estoque</a>
+    </div>
+</nav>
+
+<!-- Abas de Categorias -->
+<div class="categorias-container">
+    <div class="categoria-tabs">
+        <button class="tab-btn active" onclick="mostrarCategoria('hortifruti')">Hortifruti</button>
+        <button class="tab-btn" onclick="mostrarCategoria('padaria')">Padaria</button>
+        <button class="tab-btn" onclick="mostrarCategoria('frios')">Frios</button>
+        <button class="tab-btn" onclick="mostrarCategoria('bebidas')">Bebidas</button>
+        <button class="tab-btn" onclick="mostrarCategoria('carnes')">Carnes</button>
+    </div>
+</div>
+
+<!-- Conteúdo das Categorias -->
+<div class="categoria-conteudo">
+    <section class="ofertas-section active" id="hortifruti">
+        <h2 class="categoria-titulo">Hortifruti</h2>
+        <div class="produtos-grid"></div>
+    </section>
+
+    <section class="ofertas-section" id="padaria">
+        <h2 class="categoria-titulo">Padaria</h2>
+        <div class="produtos-grid"></div>
+    </section>
+
+    <section class="ofertas-section" id="carnes">
+        <h2 class="categoria-titulo">Carnes</h2>
+        <div class="produtos-grid"></div>
+    </section>
+
+    <section class="ofertas-section" id="frios">
+        <h2 class="categoria-titulo">Frios</h2>
+        <div class="produtos-grid"></div>
+    </section>
+
+    <section class="ofertas-section" id="bebidas">
+        <h2 class="categoria-titulo">Bebidas</h2>
+        <div class="produtos-grid"></div>
+    </section>
+</div>
+
+<!-- Seção Sobre Nós -->
+<div class="categorias-container">
+    <section class="ofertas-section active" id="sobre">
+        <h2 class="categoria-titulo">Sobre Nós</h2>
+        <p class="descricao">
+            Bem-vindo ao <strong>Supermercado SUPRA</strong>, uma rede inovadora de supermercados criada com dedicação e visão por alunos de Ciência da Computação!
+        </p>
+        <p class="descricao">
+            Nossa história começou com uma ideia simples: unir tecnologia e conveniência para transformar a experiência de compras. Somos mais do que um supermercado. Somos o resultado de sonhos, trabalho em equipe e a vontade de fazer a diferença.
+        </p>
+        <p class="descricao">
+            <strong>Por que escolher o SUPRA?</strong>
+        <ul>
+            <li>Somos apaixonados por tecnologia e usamos nosso conhecimento para criar uma experiência de compra única.</li>
+            <li>Valorizamos a comunidade e buscamos sempre oferecer o melhor em qualidade e custo-benefício.</li>
+            <li>Nosso compromisso é com a inovação, sustentabilidade e, acima de tudo, com você!</li>
+        </ul>
+        </p>
+        <p class="descricao">
+            Venha fazer parte desta história e descubra como o SUPRA está revolucionando a forma de fazer compras. Aqui, tecnologia e humanidade caminham juntas para oferecer o que há de melhor.
+        </p>
+    </section>
+</div>
+<!-- Seção SAC -->
+<!-- Seção SAC -->
+<div class="categorias-container">
+    <section class="ofertas-section active" id="sac">
+        <h2 class="categoria-titulo">SAC - Perguntas Frequentes</h2>
+        <div class="perguntas-respostas">
+            <div class="faq-item">
+                <h3 class="pergunta">1. Como faço para criar uma conta?</h3>
+                <p class="resposta">Para criar uma conta, clique no botão "Login/Cadastro" no topo da página e preencha o formulário com seus dados pessoais.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="pergunta">2. Quais são as formas de pagamento aceitas?</h3>
+                <p class="resposta">Aceitamos cartões de crédito, débito, boleto bancário e pagamentos via Pix.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="pergunta">3. Como posso ver o catálogo de produtos?</h3>
+                <p class="resposta">No menu principal, clique nas categorias como "Hortifruti", "Padaria", "Frios", entre outras, para explorar os produtos disponíveis.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="pergunta">4. Como faço login na minha conta?</h3>
+                <p class="resposta">Para fazer login, clique no botão "Login/Cadastro" no topo da página e insira seu e-mail e senha cadastrados.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Rodapé -->
+<footer>
+    <p>© 2025 Supermercado SUPRA - Todos os direitos reservados</p>
+</footer>
+</body>
+</html>
