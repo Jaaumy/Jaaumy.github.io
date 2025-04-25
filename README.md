@@ -47,7 +47,7 @@ Este repositório contém o código-fonte de um site fictício chamado **Superme
 
 ## 🌐 Demonstração
 
-Você pode acessar o site do projeto clicando [aqui](supramercado.me).
+Você pode acessar o site do projeto clicando [aqui](www.supramercado.me).
 
 ---
 
