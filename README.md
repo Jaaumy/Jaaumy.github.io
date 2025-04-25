@@ -64,5 +64,4 @@ Se você deseja contribuir, siga as etapas abaixo:
 Caso tenha dúvidas ou sugestões, sinta-se à vontade para entrar em contato:
 
 - **Email**: jaaumzinsz@gmail.com
-- **Linkedin**: [João Pedro](www.linkedin.com/in/joão-pedrooz)
 - **GitHub**: [Jaaumy](https://github.com/Jaaumy)
