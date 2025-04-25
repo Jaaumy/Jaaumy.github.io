@@ -39,7 +39,7 @@ Este repositório contém o código-fonte de um site fictício chamado **Superme
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/Jaaumy/supermercado-supra.git
+   [git clone https://github.com/Jaaumy/Supramercado.git
    ```
 2. Abra o arquivo `index.html` em um navegador para visualizar o site.
 
