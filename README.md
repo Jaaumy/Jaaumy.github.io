@@ -4,7 +4,9 @@ Bem-vindo ao **Supermercado Supra**, um projeto inovador que combina tecnologia 
 
 ## 🌟 Sobre o Projeto
 
-Este repositório contém o código-fonte de um site fictício chamado **Supermercado Supra**, criado por alunos de Ciência da Computação. O objetivo do projeto é oferecer uma experiência de compra moderna, intuitiva e eficiente.
+O **Supermercado Supra** nasceu como uma ideia simples: mostrar como a tecnologia pode melhorar tarefas cotidianas, como fazer compras no supermercado. Com esse projeto, eu e meu grupo quis criar algo que fosse intuitivo, moderno e que pudesse oferecer uma experiência de compra prática e eficiente.
+
+Aqui você encontrará categorias organizadas, um controle de estoque, e ainda uma seção de perguntas frequentes para ajudar os clientes. Tudo foi pensado para oferecer o melhor em usabilidade e conveniência.
 
 ### **Funcionalidades**
 - 🌱 **Categorias de Produtos**: Hortifruti, Padaria, Frios, Bebidas e Carnes.
