@@ -362,3 +362,62 @@
         line-height: 1.6; /* Altura das linhas da resposta */
         margin-bottom: 10px; /* Espaçamento abaixo da resposta */
     }
+    /* Mini Carrinho */
+    .mini-carrinho {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: var(--verde);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        padding: 10px;
+        width: 300px;
+        text-justify: auto;
+        z-index: 1000; /* Adicionado para garantir que o carrinho fique acima de outros elementos */
+    }
+        /* Estilo para o contêiner do logotipo */
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px; /* Espaçamento entre o logotipo e os botões */
+    }
+
+    /* Ajuste para a imagem do logotipo */
+    .logo-container img {
+        height: 100px; /* Ajuste a altura do logotipo conforme necessário */
+        width: auto;
+    }
+
+    /* Estilo para os links da barra de navegação */
+    .nav-links {
+        display: flex;
+        justify-content: center; /* Centraliza os botões */
+        gap: 2rem; /* Espaçamento entre os botões */
+    }
+    .mini-carrinho h3 {
+        margin-bottom: 10px;
+    }
+
+    .mini-carrinho ul {
+        list-style: none;
+        padding: 0;
+        max-height: 150px;
+        overflow-y: auto;
+    }
+
+    .mini-carrinho ul li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+
+    .mini-carrinho button {
+        width: 100%;
+        background-color: var(--verde);
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+    }

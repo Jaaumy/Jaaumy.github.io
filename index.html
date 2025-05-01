@@ -13,7 +13,7 @@
 <body class="body">
 <!-- Barra de navegação -->
 <nav class="navbar">
-    <div class="imagem-promocao">
+    <div class="logo-container">
         <img src="Imagem/iconSupra.png" alt="Supermercado Supra">
     </div>
     <div class="nav-links">
@@ -24,8 +24,14 @@
         <a href="estoque.html">Estoque</a>
     </div>
 </nav>
-
 <!-- Abas de Categorias -->
+<!-- Mini Carrinho -->
+<div id="mini-carrinho" class="mini-carrinho active">
+    <h3>Meu Carrinho</h3>
+    <ul id="mini-carrinho-itens"></ul>
+    <p>Total: R$ <span id="mini-carrinho-total">0.00</span></p>
+    <button onclick="abrirCarrinhoCompleto()">Ver Carrinho Completo</button>
+</div>
 <div class="categorias-container">
     <div class="categoria-tabs">
         <button class="tab-btn active" onclick="mostrarCategoria('hortifruti')">Hortifruti</button>
@@ -87,7 +93,6 @@
         </p>
     </section>
 </div>
-<!-- Seção SAC -->
 <!-- Seção SAC -->
 <div class="categorias-container">
     <section class="ofertas-section active  " id="sac">
